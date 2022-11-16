@@ -91,6 +91,17 @@
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <configuration>
                     <skip>false</skip>
+                    <feature-packs>
+                        <feature-pack>
+                            <location>org.wildfly:wildfly-galleon-pack:27.0.0.Final</location>
+                        </feature-pack>
+                        <feature-pack>
+                            <location>org.wildfly.cloud:wildfly-cloud-galleon-pack:2.0.0.Final</location>
+                        </feature-pack>
+                    </feature-packs>
+                    <layers>
+                        <layer>cloud-server</layer>
+                    </layers>
                 </configuration>
             </plugin>
 
